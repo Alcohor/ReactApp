@@ -51,7 +51,6 @@ class MainContainer extends React.Component {
 
   renderTableBarItem(){
     let { tabs } = this.state
-    console.log(tabs)
     return tabs.map(tab=>(
 
       <TabBar.Item

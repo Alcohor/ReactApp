@@ -17,13 +17,12 @@ class NewGoodsContainerWrap extends Component{
          this.setState({
              data:goodsData
          })
-         console.log(goodsData.data.data.goodsMap)
     }
 
     render(){
         return(
             <div className="new-goods-contaier-wrap">
-                <ContinerTitleBar title={this.state.title}/>
+                <ContinerTitleBar tips="最新专辑、周边上架" title={this.state.title}/>
                 <div className="main-wrap">
                     {this.renderItem()}
                 </div>

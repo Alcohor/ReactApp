@@ -12,7 +12,6 @@ class NavCard extends PureComponent {
 
     render(){
         let { data } = this.props
-        console.log(data)
         return(
             <div>
                 <div className="sub-title"></div>

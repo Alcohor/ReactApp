@@ -20,7 +20,7 @@ class Home extends Component {
                 <SearchGroupHeader/>
                 <ScrollBanner/>
                 <NavWrap/>
-                <NewGoodsContainerWrap/>
+                <NewGoodsContainerWrap tips="最新专辑、周边上架"/>
                 <HotStarContainWrap/>
             </div>
         )

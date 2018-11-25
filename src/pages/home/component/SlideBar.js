@@ -10,10 +10,14 @@ class SlideBar extends React.Component {
         index:0,
       }
   }
+
+
+  handleChange=(_starInfo)=>{
+    this.props.handleChange(_starInfo)
+  }
   
   componentDidMount() {
     // simulate img loading
-    
       this.setState({
         data: this.props,
       });
@@ -23,13 +27,16 @@ class SlideBar extends React.Component {
       <WingBlank>
         <Carousel
           autoplay={false}
+          infinite
           cellSpacing={20}
           dots={false}
-          slideWidth={0.2}
+          slideWidth={0.25}
           afterChange={index => {this.setState({
             index:index
           })
-        console.log(this.state.index)
+        let {data} = this.props
+         let _starInfo={artistId:data[index].id,artistName:data[index].name,num:6}
+         this.handleChange(_starInfo)
         }}
         >
           {this.renderImg()}
@@ -40,7 +47,6 @@ class SlideBar extends React.Component {
 
   renderImg(){
     let { data } = this.state.data
-    console.log(data,111111111)
     if (  this.state.data===1 ) return '';
     
     return( data.map(val => 

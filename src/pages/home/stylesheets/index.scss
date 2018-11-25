@@ -66,32 +66,54 @@
         padding: .4rem;
         display: flex;
         justify-content: space-around; 
-        .card-dis{
-            width: 2.933333rem;
-            img{
-                width: 100%;
-            }
-            .goods-title{
-                margin: 0;
-                height: .853333rem;
-                color: #201f1f;
-                font-size: .32rem;
-                position:relative;
-                line-height:.426667rem;
-                // height:4.2em;/* 3 倍line-height  多少倍就是多少行*/
-                overflow:hidden;
-            }
         }
-
+    }
+    .card-dis{
+        width: 2.933333rem;
+        img{
+            width: 100%;
         }
-        
+        .goods-title{
+            margin: 0;
+            height: .853333rem;
+            color: #201f1f;
+            font-size: .32rem;
+            position:relative;
+            line-height:.426667rem;
+            // height:4.2em;/* 3 倍line-height  多少倍就是多少行*/
+            overflow:hidden;
+        }
     }
 
     .hot-star-contain-wrap{
         margin-top: .266667rem;
         .am-wingblank.am-wingblank-lg {
             margin: 0;
+            background-color: #fff;
         }
+        .card-box{
+            width: 100%;
+            background-color: #fff;
+            .title{
+                color: #ff4683;
+                font-size: .29333333rem;
+                width: 5.33333333rem;
+                line-height: .8rem;
+                text-align: center;
+                margin: 0 auto .56rem;
+                font-weight: 400;
+            }
+            .card-wrap{
+                background-color: #fff;
+                height: 10.666667rem;
+                padding: .4rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around; 
+            }
+
+        }
+
     }
 
     .contain-title-bar{
@@ -109,6 +131,11 @@
             font-size: .34666667rem;
             color: #ff4683;
             font-weight: 500;
+        }
+        .title-tips{
+            font-size: .29333333rem;
+            color: #ced0dd;
+        
         }
         .more-entry{
             line-height: 1.466667rem;

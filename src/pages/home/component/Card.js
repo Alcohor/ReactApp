@@ -6,7 +6,6 @@ class Card extends Component {
     }
     
     render(){
-        console.log(this.props)
         let { headImg,title }= this.props.data
 
         return(
