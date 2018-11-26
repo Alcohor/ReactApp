@@ -1,0 +1,1 @@
+export const ASYNC_GET_GOODS_INFO = 'ASYNC_GET_GOODS_INFO'
