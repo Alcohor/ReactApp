@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 
 class Card extends Component {
     constructor(props){
@@ -6,13 +7,14 @@ class Card extends Component {
     }
     
     render(){
-        let { headImg,title }= this.props.data
-
+        let { headImg,title,id }= this.props.data
         return(
-            <div className="card-dis">
-                <img src={headImg}></img>
-                <p className="goods-title">{title}</p>
-            </div>
+            <Link to={{pathname:`/detail/${id}`}} >
+                <div className="card-dis">
+                    <img src={headImg}></img>
+                    <p className="goods-title">{title}</p>
+                </div>
+            </Link>
         )
     }
 
