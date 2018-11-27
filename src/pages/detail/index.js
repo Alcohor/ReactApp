@@ -3,6 +3,7 @@ import axios from 'axios'
 import HeadMenu from './layout/HeadMenu'
 import ScrollPhoto from './layout/ScrollPhoto'
 import InfroBox from './layout/InfoBox'
+import { MainContainerBox } from './layout/MainContainerBox'
 
 import './stylesheet/index.scss'
 
@@ -10,7 +11,8 @@ class detail extends Component{
     constructor(props){
         super(props)
         this.state={
-            data:1
+            data:1,
+            info:1
         }
     }
    async componentWillMount(){
@@ -19,7 +21,12 @@ class detail extends Component{
        this.setState({
            data:data
        })
-       console.log(this.state.data)
+       
+       let goodsDetailsInfo = await axios.get("/yyt/goods-desc",{params:{goodsId:id}})
+       let {info} = goodsDetailsInfo.data
+       this.setState({
+           info:info
+       })
 
 
     }
@@ -29,6 +36,7 @@ class detail extends Component{
                 <HeadMenu/>
                 {this.renderScrollImg()}
                 {this.renderInfoBox()}
+                {this.renderMainContainerBox()}
             </div>
         )
     }
@@ -37,6 +45,14 @@ class detail extends Component{
         let data = this.state.data.goodsDetail.descImages
         return(
             <ScrollPhoto data={data}></ScrollPhoto>
+        )
+    }
+
+    renderMainContainerBox(){
+        if( this.state.info === 1 ) return ''
+        let { info } = this.state
+        return(
+            <MainContainerBox info={info}/>
         )
     }
 
