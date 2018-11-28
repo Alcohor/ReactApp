@@ -8934,6 +8934,11 @@ react-native-swipeout@^2.2.2:
     prop-types "^15.5.10"
     react-tween-state "^0.1.5"
 
+react-redux-connect-alcohor@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-redux-connect-alcohor/-/react-redux-connect-alcohor-1.0.0.tgz#ba650fbd439c2c07510a6b9c726c85c527f04d54"
+  integrity sha512-mNEuZGfsr3oMZe5AspCC4U8Eng5RDY7wyBBsDPTplH4WTnscvvrtgv58xsctuhZgpdxjRs1oojqaFxs7Q4NhhQ==
+
 react-redux@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.1.1.tgz#88e368682c7fa80e34e055cd7ac56f5936b0f52f"

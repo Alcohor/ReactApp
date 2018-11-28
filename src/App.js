@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import {Route,BrowserRouter,Switch} from 'react-router-dom'
+import {Route,BrowserRouter,Switch,Redirect} from 'react-router-dom'
 import Detail from './pages/detail'
 import Home  from '@pages/home'
 import  ClassifyContainer from '@pages/classify/ClassifyContainer'
@@ -13,7 +13,7 @@ class App extends Component {
       <LoadingTips/>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={Home}></Route>
+            <Redirect exact path="/" to="/home" component={Home}></Redirect>
             <Route path="/home" component={Home}></Route>
             <Route path="/classify" component={ClassifyContainer}></Route>
             <Route path="/detail/:id" component={Detail}></Route>

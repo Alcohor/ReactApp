@@ -5,9 +5,8 @@ import ClassifyContainer from './ClassifyContainer';
 
 export const Header = styled.div`
     width:100%;
-    padding:0 .266667rem;
     position:relative;
-    height:45px;
+    height:1.2rem;
     background-color:#fff;
     h1{
         margin:0;
@@ -20,14 +19,23 @@ export const Header = styled.div`
     }
     span{
         position:absolute;
-        right:10px;
+        right:.266667rem;
         top:0;
         height: 100%;
         line-height: 1.2rem;
-        font-size:22px;
+        font-size:.586667rem;
     }
 `
 
 export const ClassifyWrap = styled.div`
     width:100%;
+    height:100vh;
+`
+
+export const ContentBox = styled.div`
+    display:flex;
+    justify-content:space-between;
+    margin-top:60px;
+    flex-wrap:wrap;
+    padding:0 20px;
 `

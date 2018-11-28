@@ -6,15 +6,12 @@ export const MainNavWraper = styled.div`
     display:flex;
     z-index:9999;
     flex-wrap:nowrap;
-    height: 40px;
     justify-content:space-between;
+    align-items:center;
     height:50px;
     position:fixed;
     background-color:#fff;
     bottom:0;
-    
-    /*  */
-    /* #696969 */
 `
 
 export const MainNavItem = styled.span`

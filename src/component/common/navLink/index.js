@@ -26,8 +26,8 @@ class MainNavLink extends Component{
         return(
             <MainNavWraper>
                 {this.state.data.map(val=>
-                    <MainNavItem>
-                        <NavLink to={val.to} key={val.id}>
+                    <MainNavItem key={val.id}>
+                        <NavLink to={val.to} >
                         <i className={'fa '+val.icon}></i>
                         <h1>{val.title}</h1>
                         </NavLink>

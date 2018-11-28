@@ -28,7 +28,7 @@ class SlideBar extends PureComponent {
             <ScrollBox ref={el => this.el = el}>
                 <ScrollWrap>
                     {this.state.data.map(val=>
-                        <ScrollItems key={val.id} onTouchStart={this.props.getNewData.bind(this,val.link)} >{val.title}</ScrollItems>
+                        <ScrollItems key={val.id} onClick={this.props.getNewData.bind(this,val.link)} >{val.title}</ScrollItems>
                     )}
                 </ScrollWrap>
             </ScrollBox>
@@ -36,8 +36,14 @@ class SlideBar extends PureComponent {
         )
     }
 
+    componentWillMount(){
+        let params = {bannerType:"ALBUM",pageSize: 10,pageNum: 0}
+        this.props.getNewData(params)
+    }
+    
+
     componentDidMount(){
-        new BScroll(this.el,{scrollX:true})
+        new BScroll(this.el,{scrollX:true,click:true})  
     }
 
 
