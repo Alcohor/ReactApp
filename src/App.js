@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import {Route,BrowserRouter,Switch,Redirect} from 'react-router-dom'
 import Detail from './pages/detail'
 import Home  from '@pages/home'
