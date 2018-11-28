@@ -1,10 +1,7 @@
 import React ,{Component} from 'react'
 
 class ContainerTitleBar extends Component{
-    
-    constructor(props){
-        super(props)
-    }
+
     render(){
         return(
             <div className="contain-title-bar">

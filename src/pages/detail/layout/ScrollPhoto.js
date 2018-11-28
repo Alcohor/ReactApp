@@ -1,14 +1,10 @@
 import React ,{Component} from 'react'
-
 import { Carousel, WingBlank } from 'antd-mobile';
-
-import axios from 'axios'
 
 class ScrollPhoto extends Component {
 
   constructor(props){
     super(props)
-
     this.state = {
       data: [],
       imgHeight: 176,
@@ -16,20 +12,15 @@ class ScrollPhoto extends Component {
     }
   }
 
- 
   componentWillMount() {
-      console.log(this.props.data,1010)
-      this.setState({
-        data: this.props.data,
-      });
+    console.log(this.props.data,1010)
+    this.setState({
+      data: this.props.data,
+    });
   }
-
-
-
 
   componentDidUpdate() {
     if (this.state.slideIndex !== this.state.data.length - 1) {
-      
       this.setState({ slideIndex: this.state.data.length - 1 });
     }
   }
@@ -69,8 +60,6 @@ class ScrollPhoto extends Component {
       </a>
     ))
   }
-
-
 }
 
 export default  ScrollPhoto

@@ -41,7 +41,6 @@ class NavWrap extends Component{
             temp.push({icon:val.img,text:val.name})
         });
         return <NavCard data={temp}/>
-
     }
 }
 

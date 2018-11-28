@@ -1,7 +1,4 @@
-import React,{Component} from 'react'
-
 import styled from 'styled-components'
-import ClassifyContainer from './ClassifyContainer';
 
 export const Header = styled.div`
     width:100%;
