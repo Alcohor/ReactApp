@@ -4,7 +4,6 @@ import {Route,BrowserRouter,Switch} from 'react-router-dom'
 import Detail from './pages/detail'
 import MainContainer  from '@pages/container'
 import LoadingTips from '@common/loading'
-import { Button } from 'antd';
 
 class App extends Component {
   render() {
@@ -17,7 +16,6 @@ class App extends Component {
             <Route path="/detail/:id" component={Detail}></Route>
           </Switch>
         </BrowserRouter>
-        
       </div>
     );
   }

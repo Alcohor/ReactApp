@@ -1,0 +1,1 @@
+export const GET_NEW_DATA_ASYNC = 'GET_NEW_DATA_ASY'

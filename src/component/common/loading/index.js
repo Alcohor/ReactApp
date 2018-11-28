@@ -24,7 +24,6 @@ class LoadingTips extends PureComponent {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state,55)
     return {
         isLoading: state.loading.isLoading
     }
