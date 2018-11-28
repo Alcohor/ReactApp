@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import {Header,ClassifyWrap} from './styledComponent'
 import SlideBar from './content/SlideBar'
-
+import MainNavLink from '@common/navLink'
 class ClassifyContainer extends Component{
     constructor(props){
         super(props)
@@ -15,7 +15,9 @@ class ClassifyContainer extends Component{
                     <span>···</span>
                 </Header>
                 <SlideBar></SlideBar>
+                <MainNavLink></MainNavLink>
             </ClassifyWrap>
+
         )
     }
 

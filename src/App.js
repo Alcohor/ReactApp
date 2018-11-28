@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import {Route,BrowserRouter,Switch} from 'react-router-dom'
 import Detail from './pages/detail'
-import MainContainer  from '@pages/container'
+import Home  from '@pages/home'
+import  ClassifyContainer from '@pages/classify/ClassifyContainer'
 import LoadingTips from '@common/loading'
 
 class App extends Component {
@@ -12,7 +13,9 @@ class App extends Component {
       <LoadingTips/>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={MainContainer}></Route>
+            <Route exact path="/" component={Home}></Route>
+            <Route path="/home" component={Home}></Route>
+            <Route path="/classify" component={ClassifyContainer}></Route>
             <Route path="/detail/:id" component={Detail}></Route>
           </Switch>
         </BrowserRouter>

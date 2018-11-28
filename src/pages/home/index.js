@@ -7,6 +7,8 @@ import NewGoodsContainerWrap from './layout/NewGoodsContainerWrap'
 import HotStarContainWrap from './layout/HotStarContainWrap'
 import './stylesheets/index.scss'
 
+import MainNavLink from '@common/navLink'
+
 class Home extends Component {
     constructor(props){
         
@@ -22,6 +24,7 @@ class Home extends Component {
                 <NavWrap/>
                 <NewGoodsContainerWrap tips="最新专辑、周边上架"/>
                 <HotStarContainWrap/>
+                <MainNavLink></MainNavLink>
             </div>
         )
     }
