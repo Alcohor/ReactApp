@@ -3,10 +3,8 @@ import { ActivityIndicator, WingBlank, WhiteSpace, Button } from 'antd-mobile';
 import {connect} from 'react-redux'
 
 class LoadingTips extends PureComponent {
-
-
+  
   render() {
-      console.log(this.props,999)
     return (
       <div>
         <WingBlank>

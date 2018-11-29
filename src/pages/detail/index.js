@@ -1,6 +1,7 @@
 import React ,{Component} from 'react'
 import axios from 'axios'
-import HeadMenu from './layout/HeadMenu'
+// import HeadMenu from './layout/HeadMenu'
+import Header from '@common/header'
 import ScrollPhoto from './layout/ScrollPhoto'
 import InfroBox from './layout/InfoBox'
 import { MainContainerBox } from './layout/MainContainerBox'
@@ -12,7 +13,14 @@ class detail extends Component{
         super(props)
         this.state={
             data:1,
-            info:1
+            info:1,
+            headInfo:{
+                hasMenu:true,
+                hasTitle:false,
+                hasMenu:true,
+                color: "red"
+            }
+
         }
     }
    async componentWillMount(){
@@ -33,7 +41,8 @@ class detail extends Component{
     render(){
         return(
             <div>
-                <HeadMenu/>
+                {/* <HeadMenu/> */}
+                <Header headInfo={this.state.headInfo}/>
                 {this.renderScrollImg()}
                 {this.renderInfoBox()}
                 {this.renderMainContainerBox()}
