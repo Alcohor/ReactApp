@@ -4,7 +4,12 @@ const OrderBox = ()=>{
     return(
         <OrderWrap>
             <List>我的订单</List>
-            <OrderIconBox></OrderIconBox>
+            <OrderIconBox>
+                <span>
+                    <i className=""></i>
+                    <p></p>
+                </span>
+            </OrderIconBox>
         </OrderWrap>
     )
 }
