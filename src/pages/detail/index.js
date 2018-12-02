@@ -17,10 +17,12 @@ class detail extends Component{
             headInfo:{
                 hasMenu:true,
                 hasTitle:false,
-                hasMenu:true,
-                color: "red"
+                back : true,
+                color: "#666",
+                isSolo:false,
+                BackgroundColor:"transparent"
+                
             }
-
         }
     }
    async componentWillMount(){

@@ -16,7 +16,7 @@ class MainNavLink extends Component{
                 { id: uuid(), title: '分类', to: '/classify',icon:'fa-align-justify'},
                 { id: uuid(), title: '发现', to: '/founds',icon:'fa-superpowers'},
                 { id: uuid(), title: '购物车', to: '/cart',icon:'fa-shopping-cart'},
-                { id: uuid(), title: '我的', to: '/main',icon:'fa-user'}
+                { id: uuid(), title: '我的', to: '/mine',icon:'fa-user'}
             ]
         }
     }

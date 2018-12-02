@@ -3,16 +3,29 @@ import { connect } from 'react-redux'
 import React,{ Component } from 'react'
 import SlideBar from './content/SlideBar'
 import MainNavLink from '@common/navLink'
-import { Header,ClassifyWrap,ContentBox } from './styledComponent'
+import Header from '@common/header'
+import {ClassifyWrap,ContentBox } from './styledComponent'
 
 class ClassifyContainer extends Component{
+    constructor(props){
+        super(props)
+        this.state={
+            headInfo:{
+                hasMenu:false,
+                hasTitle:true,
+                title:"分类",
+                back : false,
+                color: "#666",
+                isSolo:true,
+                backgroundColor:"white"
+            }
+        }
+    }
+
     render(){
         return(
             <ClassifyWrap>
-                <Header>
-                    <h1>分类</h1>
-                    <span>···</span>
-                </Header>
+                <Header headInfo={this.state.headInfo}/>
                 <SlideBar></SlideBar>
                 <ContentBox>
                     {this.renderContainerBox()}

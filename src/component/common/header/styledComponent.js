@@ -2,10 +2,15 @@ import styled from 'styled-components'
 
 export const HeaderWrap = styled.div`
     width:100%;
-    height:44px;
-    background-color:${props => props.color ? props.color : '#fff'};
+    height:49px;
+    position:${props=> props.isSolo ? "realtive" : "absolute"};
+    top: 0;
+    z-index:998;
+    background-color:${props => props.backgroundColor ? props.backgroundColor: '#fff'};
     display:flex;
     padding:0 10px;
+    justify-content:space-between;
+    align-items:center;
     box-sizing:border-box;
 `
 
@@ -27,9 +32,10 @@ export const BtnComponent = styled.span`
 
 export const TitleBar = styled.h1`
     margin:0;
+    flex-grow:1;
     text-align:center;
     line-height: 1.2rem;
-    color: #4c4d53;
+    color: ${props => props.color ? props.color : "#666"};
     font-size: .34666667rem;
 `
 export const MenuBox = styled.div`

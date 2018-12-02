@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Route,BrowserRouter,Switch,Redirect} from 'react-router-dom'
 import Detail from './pages/detail'
 import Home  from '@pages/home'
+import Mine  from '@pages/mine'
 import  ClassifyContainer from '@pages/classify/ClassifyContainer'
 import LoadingTips from '@common/loading'
 
@@ -16,6 +17,7 @@ class App extends Component {
             <Route path="/home" component={Home}></Route>
             <Route path="/classify" component={ClassifyContainer}></Route>
             <Route path="/detail/:id" component={Detail}></Route>
+            <Route path="/mine" component={Mine}></Route>
           </Switch>
         </BrowserRouter>
       </div>
