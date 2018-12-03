@@ -55,4 +55,17 @@ export const OrderIconBox = styled.div`
     width:100%;
     height:88px;
     display:flex;
+    background-color:#e8e9ee;
+`
+
+export const OrderIconWrap = styled.span`
+    width:25%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    i{
+        font-size:26px;
+        color:#333;
+    }
 `
